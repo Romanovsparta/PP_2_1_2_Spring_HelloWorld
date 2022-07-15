@@ -11,7 +11,7 @@ public class App {
         Cat catBean = (Cat) applicationContext.getBean("cat");
         Cat secondCatBean = (Cat) applicationContext.getBean("cat");
 
-        System.out.println(bean.equals(secondBean));
-        System.out.println(catBean.equals(secondCatBean));
+        System.out.println(bean == secondBean);
+        System.out.println(catBean == secondCatBean);
     }
 }
